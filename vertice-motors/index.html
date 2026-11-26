@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vértice Motors</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#inicio">
+        <img src="img/logo.svg" width="36" height="36" alt="Logo"> Vértice Motors
+      </a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#acervo">Acervo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#agendar">Test drive</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="inicio" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/hero-1.svg" class="d-block w-100" alt="Esportivo vermelho">
+        <div class="carousel-caption">
+          <h1>Esportivos prontos para a estrada</h1>
+          <p>Revisados em 40 itens e com garantia de 6 meses.</p>
+          <a href="#acervo" class="btn btn-warning">Ver acervo</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/hero-2.svg" class="d-block w-100" alt="SUV laranja">
+        <div class="carousel-caption">
+          <h2>SUVs para qualquer caminho</h2>
+          <p>Tração 4x4 e espaço para a família.</p>
+          <a href="#agendar" class="btn btn-warning">Agendar test drive</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/hero-3.svg" class="d-block w-100" alt="Clássico amarelo">
+        <div class="carousel-caption">
+          <h2>Clássicos restaurados</h2>
+          <p>Com laudo de originalidade e documentação em dia.</p>
+          <a href="#sobre" class="btn btn-warning">Conhecer a garagem</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" data-bs-target="#inicio" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" data-bs-target="#inicio" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  <div id="sobre" class="container py-5">
+    <div class="row align-items-center g-4">
+      <div class="col-md-6 texto">
+        <h2>Uma garagem feita por quem gosta de dirigir</h2>
+        <p>Selecionamos esportivos, SUVs, compactos e clássicos. Só vai para a vitrine o carro que passa pela nossa oficina.</p>
+        <ul>
+          <li>Revisão de 40 itens antes de cada venda</li>
+          <li>Laudo cautelar e histórico de manutenção</li>
+          <li>Test drive agendado, sem pressa</li>
+        </ul>
+      </div>
+      <div class="col-md-6 texto">
+        <img src="img/sobre.svg" class="img-fluid rounded" alt="Painel de velocímetro">
+      </div>
+    </div>
+  </div>
+  <div id="acervo" class="bg-light py-5">
+    <div class="container">
+      <h2 class="mb-4">Nosso acervo</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/car-esportivo.svg" class="card-img-top" alt="Falcão GT 3.0">
+            <div class="card-body">
+              <h3 class="h5">Falcão GT 3.0</h3>
+              <p>2022, 18.500 km, 3.0 turbo</p>
+              <p class="fw-bold">R$ 489.900</p>
+              <a href="#agendar" class="btn btn-dark" data-carro="Falcão GT 3.0">Tenho interesse</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/car-suv.svg" class="card-img-top" alt="Trilha X4">
+            <div class="card-body">
+              <h3 class="h5">Trilha X4</h3>
+              <p>2023, 12.300 km, 2.0 diesel 4x4</p>
+              <p class="fw-bold">R$ 289.900</p>
+              <a href="#agendar" class="btn btn-dark" data-carro="Trilha X4">Tenho interesse</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/car-classico.svg" class="card-img-top" alt="Aurora 1967">
+            <div class="card-body">
+              <h3 class="h5">Aurora 1967</h3>
+              <p>Restaurado, 64.000 km, seis cilindros</p>
+              <p class="fw-bold">R$ 215.000</p>
+              <a href="#agendar" class="btn btn-dark" data-carro="Aurora 1967">Tenho interesse</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/car-compacto.svg" class="card-img-top" alt="Pulga RS">
+            <div class="card-body">
+              <h3 class="h5">Pulga RS</h3>
+              <p>2021, 31.800 km, 1.0 turbo</p>
+              <p class="fw-bold">R$ 98.900</p>
+              <a href="#agendar" class="btn btn-dark" data-carro="Pulga RS">Tenho interesse</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="agendar" class="container py-5">
+    <h2>Agende seu test drive</h2>
+    <p>Confirmamos o horário por e-mail em até 1 dia útil.</p>
+    <form id="form" class="row g-3" novalidate>
+      <div class="col-12">
+        <label class="form-label" for="nome">Nome</label>
+        <input class="form-control" id="nome" minlength="3" required>
+        <div class="invalid-feedback">Digite seu nome.</div>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label" for="email">E-mail</label>
+        <input class="form-control" id="email" type="email" required>
+        <div class="invalid-feedback">Digite um e-mail válido.</div>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label" for="telefone">Telefone (só números)</label>
+        <input class="form-control" id="telefone" pattern="[0-9]{10,11}" required>
+        <div class="invalid-feedback">Digite DDD e número, só com números.</div>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label" for="carro">Carro</label>
+        <select class="form-select" id="carro" required>
+          <option value="">Selecione</option>
+          <option>Falcão GT 3.0</option>
+          <option>Trilha X4</option>
+          <option>Aurora 1967</option>
+          <option>Pulga RS</option>
+        </select>
+        <div class="invalid-feedback">Escolha um carro.</div>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label" for="data">Data</label>
+        <input class="form-control" id="data" type="date" required>
+        <div class="invalid-feedback">Escolha uma data.</div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-warning">Enviar solicitação</button>
+      </div>
+    </form>
+  </div>
+  <div class="modal fade" id="modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-center p-4">
+        <h2 class="h4">Solicitação enviada</h2>
+        <p>Obrigado, <b id="nomeModal"></b>. Vamos confirmar seu test drive por e-mail.</p>
+        <button class="btn btn-warning" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+  <footer id="contato" class="bg-dark text-white-50 py-4">
+    <div class="container d-md-flex justify-content-between">
+      <p class="mb-2">Av. das Rodovias, 1200, RS | (54) 3000-0000 | contato@verticemotors.com.br</p>
+      <p class="mb-0">&copy; <span id="ano"></span> Vértice Motors, projeto acadêmico</p>
+    </div>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
